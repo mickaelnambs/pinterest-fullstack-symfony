@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Accueil{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <div class="jumbotron mt-3">
+            <h1 class="display-3">Bienvenue sur SymPint!</h1>
+            <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, qui? Eum, quibusdam rerum repellat saepe harum libero tenetur suscipit aspernatur!</p>
+            <hr class="my-4">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta nostrum ullam dignissimos molestiae perferendis hic!</p>
+            <p class="lead">
+                <a class="btn btn-success btn-lg" href="{{ path('ad_index') }}" role="button">Voir les photos </a>
+            </p>
+        </div>
+    </div>
+{% endblock %}

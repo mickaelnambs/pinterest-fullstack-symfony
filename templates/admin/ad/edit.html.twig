@@ -1,0 +1,32 @@
+{% extends 'admin/base.html.twig' %}
+
+{% block title %}Edition
+{% endblock %}
+
+{% block body %}
+	<div class="container mt-4">
+		{{ form_start(form) }}
+		<div class="row">
+			<div class="col-8">
+				<div>
+					<h2 class="alert-heading">Informations</h2>
+					<hr>
+					{{ form_row(form.title) }}
+					{{ form_row(form.category) }}
+					{{ form_row(form.images) }}
+					<button type="submit" class="btn btn-success">
+						<i class="fa fa-check"></i>
+						Confirmez l'edition
+					</button>
+				</div>
+			</div>
+			<div class="col-4">
+				<div class="alert alert-light">
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil expedita veniam aliquid corrupti architecto et quis praesentium natus ducimus! Dolore asperiores eaque sapiente, perferendis amet et ea ab ducimus accusantium quos repellat delectus natus ipsa sed placeat nobis nulla odio! Fuga maxime totam eligendi harum voluptas dicta libero ut itaque unde possimus id nulla, cum inventore nemo ipsa, incidunt expedita magnam veniam quod aspernatur? Fugiat perferendis odio consequuntur inventore est!</p>
+				</div>
+			</div>
+		</div>
+		{{ form_end(form) }}
+	</div>
+{% endblock %}
+
